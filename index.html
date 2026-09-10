@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan Nagori - Java Backend Developer</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2300d4ff'/><stop offset='100%25' stop-color='%23ff00ff'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='%230a0a1a'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='50' font-weight='bold' text-anchor='middle' fill='url(%23g)'>AN</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">ARYAN NAGORI</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <canvas id="particle-canvas"></canvas>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Aryan Nagori</h1>
+          <div class="role">JAVA BACKEND DEVELOPER</div>
+          <p>
+            Building reliable backend systems with Java, REST APIs, databases,
+            and clean, maintainable application design.
+          </p>
+          <div class="cta-buttons">
+            <a href="#about" class="cta-button">Explore My Work</a>
+            <a href="#contact" class="cta-button secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-visual">
+            <div class="avatar-container">
+              <img
+                src="./assets/images/Aryan.jpeg"
+                alt="Aryan Nagori"
+                class="profile-image"
+              />
+            </div>
+            <a href="#" class="resume-btn" id="resumeDownloadBtn">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+          <div class="about-text">
+            <p>
+              I'm a <strong>BCA graduate (CGPA 8.92)</strong> from
+              <strong>Dr. NSAM First Grade College</strong>, focused on building
+              a career in <strong>Java backend development</strong>. I enjoy
+              designing application logic, working with data, building APIs,
+              and understanding how software systems work behind the scenes.
+              My current focus is Java, REST APIs, SQL, and the Spring ecosystem,
+              with an emphasis on writing clean, maintainable, and scalable code.
+            </p>
+            <br />
+            <p>
+              My projects reflect a strong foundation in <strong>Java,
+              object-oriented programming, collections, streams, exception
+              handling, multithreading, and problem solving</strong>. I've also
+              solved over <strong>100 problems on LeetCode</strong>, using DSA
+              practice to strengthen my ability to break down problems and
+              design efficient solutions. I'm looking for an opportunity where
+              I can grow as a backend engineer, contribute to real-world
+              systems, and learn from experienced developers.
+            </p>
+            <br />
+            <p><strong>📧 Email:</strong> aryannagori08@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <div class="experience-icon">💻</div>
+            <h3>Full Stack Developer</h3>
+            <div class="role">Internship</div>
+            <p>
+              Developed and maintained company website with responsive design
+              and modern features. Worked on both frontend and backend systems,
+              implementing database solutions and API integrations.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Backend</span>
+              <span class="tech-tag">Databases</span>
+            </div>
+          </div>
+          <div class="experience-card">
+            <div class="experience-icon">📱</div>
+            <h3>Flutter Developer</h3>
+            <div class="role">MyWorkers Project</div>
+            <p>
+              Built MyWorkers mobile application using Flutter framework,
+              creating seamless user experience with real-time data
+              synchronization and intuitive UI/UX design.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">RESTful APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <div class="container">
+        <h2 class="section-title">Certificates & Achievements</h2>
+        <div class="certificates-grid">
+          <div class="certificate-card">
+            <div class="certificate-icon">🎯</div>
+            <h3>Technothsava</h3>
+            <p>
+              Inter-Collegiate Technology Festival participation showcasing
+              innovation and technical skills
+            </p>
+            <a
+              href="https://tinyurl.com/fkb8raaw"
+              class="certificate-link"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+          <div class="certificate-card">
+            <div class="certificate-icon">🏃‍♂️</div>
+            <h3>Annual Sports Meet</h3>
+            <p>
+              Athletic excellence and team collaboration demonstrated in college
+              sports events
+            </p>
+            <a
+              href="https://tinyurl.com/b25rnj9x"
+              class="certificate-link"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+          <div class="certificate-card">
+            <div class="certificate-icon">💡</div>
+            <h3>IP Utsav Masterclass</h3>
+            <p>
+              Participation in intellectual property awareness and innovation
+              masterclass series
+            </p>
+            <a
+              href="https://tinyurl.com/ysvzcex9"
+              class="certificate-link"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <span class="project-icon">🎮</span>
+            <h3>Cloud-Based Hangman Game</h3>
+            <p>
+              Android Hangman game with Firebase authentication, real-time cloud
+              database, global leaderboard, and secure login system. Features
+              live score tracking and multiplayer-style gameplay.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/Cloud-Based-Hangman-Game-Using-Firebase"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <span class="project-icon">🔢</span>
+            <h3>Sudoku Solver</h3>
+            <p>
+              Android application built with Java that processes user-inputted
+              puzzles, automatically detects validity and solvability,
+              displaying complete solutions.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/Sudoku-Solver"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <span class="project-icon">📊</span>
+            <h3>Employee Data Analyzer</h3>
+            <p>
+              Java application demonstrating multithreading, Optional for null
+              safety, and Stream-based filtering/sorting with custom exceptions.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/Employee-Data-Analyzer"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <span class="project-icon">📚</span>
+            <h3>Library Management System</h3>
+            <p>
+              Java-based system for tracking books, members, and transactions
+              with efficient borrowing/returning functionality.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/Library-Management-System"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <span class="project-icon">⭕</span>
+            <h3>Tic Tac Toe</h3>
+            <p>
+              Classic two-player game implemented in Java with intuitive
+              interface and advanced game logic.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/Tic-Tac-Toe"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <span class="project-icon">📄</span>
+            <h3>InvoiceForce</h3>
+            <p>
+              Python script that efficiently converts Excel spreadsheets to
+              professionally formatted PDF invoices.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/App-5"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <span class="project-icon">✅</span>
+            <h3>Todo Web App</h3>
+            <p>
+              Web-based task management application with responsive design and
+              enhanced productivity features.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/Todo-web-app"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <span class="project-icon">🎯</span>
+            <h3>Hangman Game</h3>
+            <p>
+              Classic word-guessing game with interactive gameplay, scoring
+              system, and engaging user experience.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/Hangman-Game"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-card">
+            <span class="project-icon">📱</span>
+            <h3>Todo Application</h3>
+            <p>
+              Mobile task management application to organize and track daily
+              activities and goals effectively.
+            </p>
+            <a
+              href="https://github.com/AryanNagori1405/App-1"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skills-row">
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+              /><span>Java</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                alt="Spring Boot"
+              /><span>Spring Boot</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              /><span>MySQL</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+                alt="Maven"
+              /><span>Maven</span>
+            </div>
+          </div>
+          <div class="skills-row">
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg"
+                alt="Hibernate"
+              /><span>Hibernate</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+              /><span>Git</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+              /><span>GitHub</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/network-wired.svg"
+                alt="REST APIs"
+              /><span>REST APIs</span>
+            </div>
+          </div>
+          <div class="skills-row">
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="SQL"
+              /><span>SQL</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/code.svg"
+                alt="OOP"
+              /><span>OOP</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/brain.svg"
+                alt="DSA"
+              /><span>DSA</span>
+            </div>
+            <div class="skill-button">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                alt="Postman"
+              /><span>Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p
+          style="
+            text-align: center;
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          Let's connect and explore opportunities together. Reach out through
+          any of these platforms and let's build something amazing!
+        </p>
+        <div class="social-links">
+          <a
+            href="https://tinyurl.com/vdavmfz4"
+            class="social-link"
+            target="_blank"
+            ><div class="social-link-icon">💼</div>
+            <div class="social-link-text">LinkedIn</div></a
+          >
+          <a
+            href="https://github.com/AryanNagori1405"
+            class="social-link"
+            target="_blank"
+            ><div class="social-link-icon">💻</div>
+            <div class="social-link-text">GitHub</div></a
+          >
+          <a
+            href="https://x.com/_Aryan_1405_?t=4gLbz0T4ZzxpM9AhdqVqMg&s=09"
+            class="social-link"
+            target="_blank"
+            ><div class="social-link-icon">𝕏</div>
+            <div class="social-link-text">Twitter</div></a
+          >
+          <a href="mailto:aryan.nagori.a@gmail.com" class="social-link"
+            ><div class="social-link-icon">✉️</div>
+            <div class="social-link-text">Email</div></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Aryan Nagori. All rights reserved. Built with passion and
+          dedication.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>
