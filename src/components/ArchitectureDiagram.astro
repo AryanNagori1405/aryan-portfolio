@@ -1,0 +1,34 @@
+---
+const { compact = false, title = 'REQUEST FLOW' } = Astro.props;
+const steps = compact
+  ? [
+      ['01', 'CLIENT', 'HTTP request'],
+      ['02', 'JERSEY RESOURCE', 'routing'],
+      ['03', 'REPOSITORY', 'collections'],
+      ['04', 'RESPONSE', 'resource']
+    ]
+  : [
+      ['01', 'CLIENT', 'HTTP'],
+      ['02', 'CONTROLLER', 'routing + DTOs'],
+      ['03', 'SERVICE', 'business logic + validation'],
+      ['04', 'REPOSITORY', 'Spring Data JPA'],
+      ['05', 'MYSQL', 'persistence + transactions']
+    ];
+---
+<div class:list={['architecture-wrap', { compact }]} data-architecture>
+  <div class="architecture-head">
+    <span>LIGHTWEIGHT SYSTEM MAP</span>
+    <span>{title}</span>
+  </div>
+  <div class:list={['architecture', { compact }]}>
+    {steps.map((step, i) => (
+      <div class="arch-flow-item" style="display:contents">
+        <div class="arch-step" style={`--i:${i}`} tabindex="0">
+          <div class="arch-top"><span>{step[0]}</span><span>{step[2]}</span></div>
+          <div class="arch-name">{step[1]}</div>
+        </div>
+        {i < steps.length - 1 && <div class="arch-arrow" aria-hidden="true"><span>→</span></div>}
+      </div>
+    ))}
+  </div>
+</div>

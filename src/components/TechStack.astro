@@ -1,0 +1,30 @@
+---
+const groups = [
+  { key: 'backend', name: 'Backend', items: ['Java', 'Spring', 'Spring Boot', 'Spring MVC', 'Hibernate', 'JPA', 'Spring Data JPA', 'JDBC', 'Servlets', 'REST APIs', 'Jersey'] },
+  { key: 'database', name: 'Databases', items: ['SQL', 'MySQL', 'PostgreSQL', 'Database Design', 'Joins & Subqueries', 'Transactions', 'Primary & Foreign Keys'] },
+  { key: 'core', name: 'Core CS', items: ['Object-Oriented Programming', 'Collections Framework', 'Exception Handling', 'Generics', 'Java 8 Features', 'Data Structures & Algorithms'] },
+  { key: 'tools', name: 'Tools', items: ['Git', 'GitHub', 'Maven', 'Postman', 'IntelliJ IDEA', 'Visual Studio Code', 'Linux', 'Debugging'] },
+  { key: 'testing', name: 'Testing', items: ['JUnit', 'Mockito'] },
+  { key: 'cloud', name: 'Cloud & DevOps', items: ['Docker', 'AWS', 'CI/CD'] },
+  { key: 'languages', name: 'Languages', items: ['Java', 'Python', 'C'] }
+];
+---
+<div class="stack-switcher" data-tech-switcher>
+  <div class="stack-tabs" role="tablist" aria-label="Technology categories">
+    {groups.map((group, i) => (
+      <button class:list={['stack-tab', { active: i === 0 }]} type="button" role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-stack-tab={group.key}>
+        <span>{String(i + 1).padStart(2, '0')}</span>{group.name}
+      </button>
+    ))}
+  </div>
+  <div class="stack-content">
+    {groups.map((group, i) => (
+      <section class:list={['stack-panel', { active: i === 0 }]} data-stack-panel={group.key} aria-label={group.name}>
+        <div class="stack-panel-head"><span class="mono-label">{group.name.toUpperCase()}</span><p>{group.items.length} tools / concepts</p></div>
+        <div class="stack-words">
+          {group.items.map((item) => <button type="button" class="stack-word" data-stack-item>{item}</button>)}
+        </div>
+      </section>
+    ))}
+  </div>
+</div>

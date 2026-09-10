@@ -1,0 +1,292 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import ArchitectureDiagram from '../components/ArchitectureDiagram.astro';
+import TechStack from '../components/TechStack.astro';
+---
+<BaseLayout>
+  <div class="site-shell">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+    <Header />
+
+    <main id="main">
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid shell">
+          <div class="hero-copy">
+            <p class="hero-kicker reveal">JAVA BACKEND DEVELOPER</p>
+            <h1 id="hero-title" class="hero-title hero-name reveal" data-hero-name aria-label="Aryan Nagori"><span class="hero-name-line hero-name-solid" data-name-line="aryan">ARYAN</span><span class="hero-name-line hero-name-outline" data-name-line="nagori">NAGORI</span></h1>
+            <p class="hero-positioning reveal">Backend-first. Always learning.</p>
+            <p class="hero-lede reveal">BCA graduate focused on Java backend development, with hands-on work across RESTful APIs, relational databases, business logic and API testing.</p>
+            <p class="hero-lede hero-lede-secondary reveal">Java, Spring Boot, REST APIs and relational databases — with a focus on practical engineering, maintainable code and learning by building.</p>
+            <div class="hero-cta reveal"><a class="button button-solid" href="#projects">View projects <span>↓</span></a><a class="button button-outline" href="/assets/Aryan-Nagori-Resume.pdf" target="_blank" rel="noreferrer">Download resume <span>↗</span></a></div>
+            <div class="hero-links reveal"><a href="https://github.com/AryanNagori1405" target="_blank" rel="noreferrer">GitHub ↗</a><span>·</span><a href="mailto:aryannagori08@gmail.com">Email ↗</a><span>·</span><span>Bengaluru, India</span></div>
+          </div>
+          <div class="hero-visual reveal">
+            <p class="hero-systems">I build the systems <em>behind the product.</em></p>
+            <div class="hero-side-note"><span>01</span><p>Early-career engineer<br />building increasingly serious systems.</p></div>
+          </div>
+        </div>
+        <div class="hero-foot shell reveal"><span>Scroll to explore</span><span>↓</span></div>
+      </section>
+
+      <section class="section-shell" id="about">
+        <div class="shell">
+          <SectionHeading index="01" eyebrow="ABOUT" title="Backend-first. <em>Always learning.</em>" body="" />
+          <div class="about-grid">
+            <div class="about-copy reveal"><p class="about-lede"><strong>BCA graduate focused on Java backend development</strong>, with hands-on work across RESTful APIs, relational databases, business logic and API testing.</p><p><strong>Focus:</strong> Java, the Spring ecosystem, REST APIs, SQL and the engineering details around maintainable backend code.</p><p><strong>Approach:</strong> break problems down, model the data flow, implement the behavior, test the edges, debug what fails and commit the result cleanly.</p><p><strong>Direction:</strong> build increasingly realistic systems and deepen the backend fundamentals behind them.</p><div class="about-code" aria-label="Engineering loop"><span>problem</span><i>→</i><span>model</span><i>→</i><span>implement</span><i>→</i><span>test</span><i>→</i><span>refine</span></div></div>
+            <figure class="about-portrait reveal" data-tilt><div class="portrait-label top"><span>01 / PROFILE</span><span>IND · 2026</span></div><img src="/assets/Aryan.jpeg" alt="Aryan Nagori wearing a dark blazer" width="738" height="1060" loading="lazy" decoding="async" /><figcaption><span>JAVA · SPRING / SQL</span><span>BUILD → LEARN → ITERATE</span></figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt-section" id="experience">
+        <div class="shell">
+          <SectionHeading index="02" eyebrow="EXPERIENCE" title="Production exposure,<br /><em>honest scope.</em>" body="One internship. Real collaboration. A clearer understanding of how software moves from requirement to working feature." />
+          <article class="experience-line reveal">
+            <div class="experience-index">01</div>
+            <div class="experience-main">
+              <p class="eyebrow-small">BENGALURU, INDIA · HYBRID</p>
+              <div class="experience-title-row"><h3>Mobile Application Developer Intern</h3><span class="experience-date">FEB 2026 — APR 2026</span></div>
+              <p class="company">Solident Technologies</p>
+              <div class="experience-body"><p>Contributed as a full-stack developer on the company’s official website and MyWorkers, a cross-platform mobile application.</p><ul><li>Built client features in Flutter and worked with backend services in Node.js / Express.</li><li>Collaborated on requirements, debugging, feature implementation and backend integration.</li><li>Gained experience with production-oriented workflows, version control and cross-functional collaboration.</li></ul></div>
+              <div class="tag-row"><span>Flutter</span><span>Node.js / Express</span><span>Backend integration</span><span>Git</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="projects">
+        <div class="shell">
+          <SectionHeading index="03" eyebrow="PROJECTS" title="Two systems.<br /><em>One direction.</em>" body="The centerpiece is not a gallery of cards. It is a closer look at the systems I am building and the engineering choices behind them." />
+
+          <article class="project-showcase reveal">
+            <div class="project-index">01</div>
+            <div class="project-title-block"><p class="eyebrow-small">PRIMARY BUILD · JAVA / SPRING</p><h3>Smart Campus &amp;<br />Placement Platform</h3><p class="project-status"><span></span> CURRENTLY BUILDING · IN DEVELOPMENT</p></div>
+            <div class="project-detail"><p class="project-summary">A backend platform for managing students, companies, job postings, applications and placement workflows end-to-end.</p><div class="project-facts"><div><span>Engineering</span><strong>Relational entities · joins &amp; keys · transactions · validation · exception handling</strong></div><div><span>Pattern</span><strong>Controller → Service → Repository</strong></div></div><div class="project-tech-selector" data-tech-scope="campus"><p class="eyebrow-small">STACK / TAP OR CLICK TO EMPHASIZE</p><div class="tech-chip-row"><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Java</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Spring Boot</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Hibernate/JPA</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">MySQL</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">REST API</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Git</button></div></div></div>
+            <div class="project-architecture"><ArchitectureDiagram /></div>
+            <div class="project-entities reveal"><div class="entity-title"><span>DATA DOMAIN</span><strong>What the system manages</strong></div><div class="entity-row"><span>STUDENT</span><i>↔</i><span>COMPANY</span><i>↔</i><span>JOB POSTING</span><i>↔</i><span>APPLICATION</span><i>↔</i><span>PLACEMENT WORKFLOW</span></div></div>
+          </article>
+
+          <article class="project-secondary reveal">
+            <div class="project-secondary-index">02</div>
+            <div class="project-secondary-main"><p class="eyebrow-small">JAVA · JERSEY · REST</p><h3>Java REST API</h3><p>RESTful API development with Jersey for retrieving and creating application resources, using repository-based data operations, Java collections, OOP and Postman testing.</p><div class="project-tech-selector" data-tech-scope="rest"><p class="eyebrow-small">STACK / TAP OR CLICK</p><div class="tech-chip-row"><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Java</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Jersey</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">REST API</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Git</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Postman</button></div></div></div>
+            <div class="project-secondary-architecture"><ArchitectureDiagram compact title="REQUEST / RESPONSE" /></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell alt-section" id="stack">
+        <div class="stack-marquee-wrap" aria-hidden="true">
+          <div class="stack-tools-note shell">TECHNOLOGIES IN PRACTICE · A MOVING INDEX OF THE TOOLS I ACTUALLY USE</div>
+          <div class="stack-marquee">
+            <div class="stack-marquee-track">
+              <span>JAVA</span><i>/</i><span>SPRING BOOT</span><i>/</i><span>JPA</span><i>/</i><span>SQL</span><i>/</i><span>REST APIs</span><i>/</i><span>DOCKER</span><i>/</i><span>AWS</span><i>/</i><span>JUNIT</span><i>/</i>
+              <span>JAVA</span><i>/</i><span>SPRING BOOT</span><i>/</i><span>JPA</span><i>/</i><span>SQL</span><i>/</i><span>REST APIs</span><i>/</i><span>DOCKER</span><i>/</i><span>AWS</span><i>/</i><span>JUNIT</span><i>/</i>
+            </div>
+          </div>
+        </div>
+        <div class="shell"><SectionHeading index="04" eyebrow="STACK" title="Tools with<br /><em>a purpose.</em>" body="No icon wall. No inflated list. Just the technologies and core concepts that support the backend work." /><TechStack /></div>
+      </section>
+
+      <section class="section-shell" id="education">
+        <div class="shell"><SectionHeading index="05" eyebrow="EDUCATION" title="Foundation,<br /><em>then practice.</em>" body="Education first. Grades sit directly beneath each qualification so the record reads cleanly at a glance." />
+          <div class="education-grid">
+            <article class="education-item reveal"><span>01</span><div class="education-main"><h3>Bachelor of Computer Applications (BCA), Computer Science</h3><strong>Dr. NSAM First Grade College (NITTE)</strong></div><div class="education-meta"><span class="education-year">2023 — 2026</span><em>CGPA · 8.92 / 10</em></div></article>
+            <article class="education-item reveal"><span>02</span><div class="education-main"><h3>Pre-University Education (Class XII)</h3><strong>Ascent Pre University College</strong></div><div class="education-meta"><span class="education-year">2022 — 2023</span><em>95%</em></div></article>
+            <article class="education-item reveal"><span>03</span><div class="education-main"><h3>Secondary School (Class X), ICSE Board</h3><strong>Oxford Public School</strong></div><div class="education-meta"><span class="education-year">2020 — 2021</span><em>77.2%</em></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt-section" id="credentials">
+        <div class="shell proof-section">
+          <SectionHeading index="06" eyebrow="PROOF OF WORK" title="Proof of work,<br /><em>kept compact and on the left.</em>" body="What I have done and earned on the left. Evidence of ability and academic consistency on the right." />
+          <div class="proof-columns">
+            <div class="proof-column proof-left" aria-label="Certifications and college achievement">
+              <div class="proof-column-label mono-label">WHAT I HAVE DONE / EARNED</div>
+              <div class="cert-row reveal"><span>1</span><div><h3>Fundamentals of AWS Cloud Essentials</h3><p>Amazon</p></div></div>
+              <div class="cert-row reveal"><span>2</span><div><h3>Android Application Developer</h3><p>Meta</p></div></div>
+              <div class="cert-row reveal"><span>3</span><div><h3>Fundamentals of AI/ML</h3><p>IBM</p></div></div>
+              <div class="cert-row reveal"><span>4</span><div><h3>Web Development Coding Contest</h3><p>Organized during college.</p></div></div>
+              <div class="cert-row reveal proof-leetcode"><span>5</span><div><h3>100+ LeetCode Problems Solved</h3><p>Data structures &amp; algorithms practice.</p></div></div>
+            </div>
+            <div class="proof-column proof-right" aria-label="Achievements / evidence">
+              <div class="proof-column-label mono-label">ACHIEVEMENTS / EVIDENCE</div>
+              <div class="achievement-row reveal"><div class="achievement-marker">1</div><div class="achievement-number">TOP 5</div><div class="achievement-copy"><h3>In Class Based on CGPA (BCA)</h3><p>Academic standing reflected in the current resume.</p></div></div>
+              <div class="achievement-row reveal"><div class="achievement-marker">2</div><div class="achievement-number">2ND</div><div class="achievement-copy"><h3>Prize — Rally Race</h3><p>College-level competition.</p></div></div>
+              <div class="achievement-row reveal"><div class="achievement-marker">3</div><div class="achievement-number">2ND</div><div class="achievement-copy"><h3>Prize — BCA Cricket Competition</h3><p>College-level competition.</p></div></div>
+              <div class="achievement-row reveal"><div class="achievement-marker">4</div><div class="achievement-number">TOP 5</div><div class="achievement-copy"><h3>Academic Achievement — Class XII</h3><p>Academic performance in Class XII.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact">
+        <div class="shell">
+          <div class="contact-intro reveal"><div class="mono-label">07 / CONNECT</div><h2>Let’s build something<br /><em>useful.</em></h2><p>For backend roles, project discussions, collaboration or a technical conversation, the best starting point is email.</p><a class="contact-email" href="mailto:aryannagori08@gmail.com">aryannagori08@gmail.com <span>↗</span></a></div>
+          <div class="contact-grid">
+            <a class="contact-tile reveal" href="https://github.com/AryanNagori1405" target="_blank" rel="noreferrer"><span class="tile-label">GITHUB</span><strong>AryanNagori1405</strong><span class="tile-arrow">↗</span></a>
+            <a class="contact-tile reveal" href="mailto:aryannagori08@gmail.com"><span class="tile-label">EMAIL</span><strong>aryannagori08@gmail.com</strong><span class="tile-arrow">↗</span></a>
+            <a class="contact-tile reveal" href="/assets/Aryan-Nagori-Resume.pdf" target="_blank" rel="noreferrer"><span class="tile-label">RESUME</span><strong>Download PDF</strong><span class="tile-arrow">↗</span></a>
+          </div>
+          <footer class="footer"><span>© 2026 ARYAN NAGORI</span><span>JAVA BACKEND DEVELOPER · BENGALURU</span></footer>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const header = document.querySelector('[data-header]');
+    const themeToggle = document.querySelector('[data-theme-toggle]');
+    const menuToggle = document.querySelector('[data-menu-toggle]');
+    const mobileMenu = document.querySelector('[data-mobile-menu]');
+    const progress = document.querySelector('[data-progress]');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const setTheme = (theme) => {
+      root.dataset.theme = theme;
+      root.style.colorScheme = theme;
+      try { localStorage.setItem('aryan-theme', theme); } catch (_) {}
+      if (themeToggle) {
+        themeToggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+        themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.content = theme === 'dark' ? '#11100e' : '#f3efe7';
+    };
+    setTheme(root.dataset.theme || 'dark');
+    themeToggle?.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+
+    const closeMenu = () => { if (!mobileMenu || !menuToggle) return; mobileMenu.classList.remove('is-open'); mobileMenu.setAttribute('aria-hidden','true'); menuToggle.setAttribute('aria-expanded','false'); document.body.classList.remove('menu-open'); };
+    menuToggle?.addEventListener('click', () => { const open = !mobileMenu.classList.contains('is-open'); mobileMenu.classList.toggle('is-open', open); mobileMenu.setAttribute('aria-hidden', String(!open)); menuToggle.setAttribute('aria-expanded', String(open)); document.body.classList.toggle('menu-open', open); });
+    mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    const updateHeader = () => header?.classList.toggle('scrolled', scrollY > 18);
+    const updateProgress = () => { if (!progress) return; const max = document.documentElement.scrollHeight - innerHeight; progress.style.width = `${max > 0 ? scrollY / max * 100 : 0}%`; };
+    let scrollFrame = 0;
+    addEventListener('scroll', () => {
+      if (scrollFrame) return;
+      scrollFrame = requestAnimationFrame(() => {
+        updateHeader();
+        updateProgress();
+        scrollFrame = 0;
+      });
+    }, { passive: true });
+    updateHeader();
+    updateProgress();
+
+    // Scroll reveals intentionally replay: leaving the viewport resets the element,
+    // so revisiting a section feels alive rather than permanently completed.
+    const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (reducedMotion.matches) {
+        entry.target.classList.add('is-visible');
+        return;
+      }
+      entry.target.classList.toggle('is-visible', entry.isIntersecting);
+    }), { threshold: .12, rootMargin: '0px 0px -5% 0px' });
+    document.querySelectorAll('.reveal').forEach(el => {
+      if (reducedMotion.matches) el.classList.add('is-visible');
+      else revealObserver.observe(el);
+    });
+
+    // Hero identity animation: replay the name from the first character whenever the hero re-enters the viewport.
+    const heroName = document.querySelector('[data-hero-name]');
+    const nameLines = {
+      aryan: heroName?.querySelector('[data-name-line="aryan"]'),
+      nagori: heroName?.querySelector('[data-name-line="nagori"]')
+    };
+    let heroNameTimer = null;
+    let heroNameObserver = null;
+    const animateHeroName = () => {
+      if (!heroName) return;
+      if (heroNameTimer) { clearTimeout(heroNameTimer); heroNameTimer = null; }
+      const run = (node, text, index, done) => {
+        if (!node) { done?.(); return; }
+        node.textContent = text.slice(0, index);
+        if (index < text.length && !reducedMotion.matches) {
+          heroNameTimer = setTimeout(() => run(node, text, index + 1, done), 105);
+        } else {
+          node.textContent = text;
+          done?.();
+        }
+      };
+      if (reducedMotion.matches) {
+        if (nameLines.aryan) nameLines.aryan.textContent = 'ARYAN';
+        if (nameLines.nagori) nameLines.nagori.textContent = 'NAGORI';
+        return;
+      }
+      if (nameLines.aryan) nameLines.aryan.textContent = '';
+      if (nameLines.nagori) nameLines.nagori.textContent = '';
+      run(nameLines.aryan, 'ARYAN', 1, () => {
+        heroNameTimer = setTimeout(() => run(nameLines.nagori, 'NAGORI', 1), 160);
+      });
+    };
+    if (heroName) {
+      animateHeroName();
+      heroNameObserver = new IntersectionObserver(entries => {
+        if (entries[0]?.isIntersecting) animateHeroName();
+      }, { threshold: .55 });
+      heroNameObserver.observe(heroName);
+    }
+
+    const sections = [...document.querySelectorAll('section[id]')];
+    const navLinks = [...document.querySelectorAll('[data-nav]')];
+    const sectionObserver = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) navLinks.forEach(link => link.classList.toggle('active', link.dataset.nav === entry.target.id)); }), { rootMargin: '-30% 0px -55% 0px' });
+    sections.forEach(section => sectionObserver.observe(section));
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', e => { const target = document.querySelector(link.getAttribute('href')); if (!target) return; e.preventDefault(); target.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'start' }); }));
+
+    const counter = document.querySelector('[data-counter]');
+    if (counter) {
+      let counterFrame = 0;
+      const counterObserver = new IntersectionObserver(entries => {
+        const entry = entries[0];
+        const target = Number(counter.dataset.counter || 0);
+        if (!entry.isIntersecting) {
+          cancelAnimationFrame(counterFrame);
+          if (!reducedMotion.matches) counter.textContent = '0';
+          return;
+        }
+        if (reducedMotion.matches) {
+          counter.textContent = String(target);
+          return;
+        }
+        cancelAnimationFrame(counterFrame);
+        const started = performance.now();
+        const tick = now => {
+          const progress = Math.min((now - started) / 900, 1);
+          counter.textContent = String(Math.floor(progress * target));
+          if (progress < 1) counterFrame = requestAnimationFrame(tick);
+        };
+        counterFrame = requestAnimationFrame(tick);
+      }, { threshold: .65 });
+      counterObserver.observe(counter);
+    }
+
+    document.querySelectorAll('[data-project-tech]').forEach(chip => chip.addEventListener('click', () => { const selected = chip.classList.toggle('is-selected'); chip.setAttribute('aria-pressed', String(selected)); }));
+    document.querySelectorAll('.arch-step').forEach(step => {
+      step.addEventListener('focus', () => step.classList.add('is-focused'));
+      step.addEventListener('blur', () => step.classList.remove('is-focused'));
+      step.addEventListener('click', () => { step.parentElement.querySelectorAll('.arch-step').forEach(item => { if (item !== step) item.classList.remove('is-focused'); }); step.classList.toggle('is-focused'); });
+    });
+
+    const tabs = [...document.querySelectorAll('[data-stack-tab]')];
+    const panels = [...document.querySelectorAll('[data-stack-panel]')];
+    tabs.forEach(tab => tab.addEventListener('click', () => {
+      const key = tab.dataset.stackTab;
+      tabs.forEach(item => { const active = item === tab; item.classList.toggle('active', active); item.setAttribute('aria-selected', String(active)); });
+      panels.forEach(panel => panel.classList.toggle('active', panel.dataset.stackPanel === key));
+    }));
+    document.querySelectorAll('[data-stack-item]').forEach(item => item.addEventListener('click', () => item.classList.toggle('is-selected')));
+
+    const tilt = document.querySelector('[data-tilt]');
+    if (tilt && !reducedMotion.matches && matchMedia('(pointer:fine)').matches) {
+      tilt.addEventListener('pointermove', e => { const r = tilt.getBoundingClientRect(); const x = (e.clientX-r.left)/r.width-.5; const y = (e.clientY-r.top)/r.height-.5; tilt.style.transform = `perspective(1200px) rotateX(${(-y*1.2).toFixed(2)}deg) rotateY(${(x*1.8).toFixed(2)}deg)`; });
+      tilt.addEventListener('pointerleave', () => tilt.style.transform = '');
+    }
+  </script>
+</BaseLayout>
