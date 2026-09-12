@@ -64,7 +64,7 @@ import TechStack from '../components/TechStack.astro';
           <article class="project-showcase reveal">
             <div class="project-index">01</div>
             <div class="project-title-block"><p class="eyebrow-small">PRIMARY BUILD · JAVA / SPRING</p><h3>Smart Campus &amp;<br />Placement Platform</h3><p class="project-status"><span></span> CURRENTLY BUILDING · IN DEVELOPMENT</p></div>
-            <div class="project-detail"><p class="project-summary">A backend platform for managing students, companies, job postings, applications and placement workflows end-to-end.</p><div class="project-facts"><div><span>Engineering</span><strong>Relational entities · joins &amp; keys · transactions · validation · exception handling</strong></div><div><span>Pattern</span><strong>Controller → Service → Repository</strong></div></div><div class="project-tech-selector" data-tech-scope="campus"><p class="eyebrow-small">STACK / TAP OR CLICK TO EMPHASIZE</p><div class="tech-chip-row"><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Java</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Spring Boot</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Hibernate/JPA</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">MySQL</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">REST API</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Git</button></div></div></div>
+            <div class="project-detail"><p class="project-summary">A backend platform for managing students, companies, job postings, applications and placement workflows end-to-end.</p><div class="project-facts"><div><span>Engineering</span><strong>Relational entities · joins &amp; keys · transactions · validation · exception handling</strong></div><div><span>Pattern</span><strong>Controller → Service → Repository</strong></div></div><div class="project-tech-selector" data-tech-scope="campus"><p class="eyebrow-small">STACK / TAP OR CLICK TO EMPHASIZE</p><div class="tech-chip-row"><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Java</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Spring Boot</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Hibernate/JPA</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">POSTGRESQL</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">REST API</button><button type="button" class="tech-chip" data-project-tech aria-pressed="false">Git</button></div></div></div>
             <div class="project-architecture"><ArchitectureDiagram /></div>
             <div class="project-entities reveal"><div class="entity-title"><span>DATA DOMAIN</span><strong>What the system manages</strong></div><div class="entity-row"><span>STUDENT</span><i>↔</i><span>COMPANY</span><i>↔</i><span>JOB POSTING</span><i>↔</i><span>APPLICATION</span><i>↔</i><span>PLACEMENT WORKFLOW</span></div></div>
           </article>
@@ -136,6 +136,38 @@ import TechStack from '../components/TechStack.astro';
       </section>
     </main>
   </div>
+
+<style>
+  @media (max-width: 620px) {
+    .proof-right .achievement-row {
+      display: grid;
+      grid-template-columns: 26px minmax(76px, .72fr) minmax(0, 1.5fr);
+      gap: 12px;
+      align-items: start;
+      padding: 22px 0;
+    }
+    .proof-right .achievement-marker {
+      grid-column: 1; grid-row: 1; padding-top: 4px;
+      color: var(--accent); font: 500 9px/1 'DM Mono', monospace;
+    }
+    .proof-right .achievement-number {
+      grid-column: 2; grid-row: 1; min-width: 0; margin: 0;
+      font-size: clamp(2rem, 10vw, 3rem); line-height: .92;
+      letter-spacing: -.05em; white-space: nowrap;
+    }
+    .proof-right .achievement-copy { grid-column: 3; grid-row: 1; min-width: 0; }
+    .proof-right .achievement-copy h3 {
+      margin: 0 0 5px; font-size: 13px; line-height: 1.35; overflow-wrap: anywhere;
+    }
+    .proof-right .achievement-copy p { margin: 0; font-size: 10px; line-height: 1.55; color: var(--muted); }
+  }
+  @media (max-width: 380px) {
+    .proof-right .achievement-row { grid-template-columns: 22px minmax(66px,.62fr) minmax(0,1.55fr); gap: 9px; }
+    .proof-right .achievement-number { font-size: 1.85rem; }
+    .proof-right .achievement-copy h3 { font-size: 12px; }
+    .proof-right .achievement-copy p { font-size: 9px; }
+  }
+</style>
 
   <script>
     const root = document.documentElement;
